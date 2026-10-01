@@ -1,0 +1,17 @@
+.DS_Store
+.env
+.idea/
+.vscode/
+*.log
+
+# Claude Code local settings
+.claude/
+CLAUDE.local.md
+
+# Local tool caches (kept inside the repo)
+.tmp/
+.venv/
+.npm-cache/
+.m2/
+.gocache/
+.gomodcache/
