@@ -30,6 +30,7 @@ PLACEHOLDERS = (
     r"_trade-off_",
     r"_What could make this design wrong\?_",
     r"_TBD_",
+    r"\bAUTHOR_NAME\b",
     r"<[a-z][a-z -]*>",
 )
 

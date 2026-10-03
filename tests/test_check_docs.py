@@ -65,6 +65,12 @@ def test_complete_documents_pass(tmp_path):
         (lambda t: t.replace("| B | costlier |\n", ""), "need at least 2"),
         (lambda t: t.replace("| A | slower |", "| _alternative 1_ | _trade-off_ |"), "placeholder"),
         (lambda t: t.replace("Numbers.", "_TBD_"), "placeholder"),
+        (
+            lambda t: t.replace(
+                "- **Status:** Accepted\n", "- **Status:** Accepted\n- **Author:** AUTHOR_NAME\n"
+            ),
+            "placeholder",
+        ),
         (lambda t: t.replace("# RFC", "RFC"), "title"),
     ],
 )

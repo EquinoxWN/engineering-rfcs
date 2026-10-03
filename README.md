@@ -76,8 +76,8 @@ Latest run (full detail in [docs/results/m1.md](docs/results/m1.md)):
 
 | Check | Result |
 |---|---|
-| Checker tests | 14 passed, 0 failed |
-| Wave 1 design documents checked | 24 (8 RFCs, 16 ADRs) |
+| Checker tests | 15 passed, 0 failed |
+| Wave 1 and 2 design documents checked | 42 (14 RFCs, 28 ADRs) |
 | Problems found in the finished wave | 0 |
 | Problems caught during the wave | scaffold placeholder RFCs in 3 repositories, before they were written |
 
@@ -85,7 +85,7 @@ Latest run (full detail in [docs/results/m1.md](docs/results/m1.md)):
 
 ```mermaid
 mindmap
-  root((14 tests pass))
+  root((15 tests pass))
     Accepts
       complete RFC and ADR
       placeholders inside code
