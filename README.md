@@ -7,6 +7,16 @@
 
 Part of my **CS Foundations** list · Markdown
 
+## Proof it works
+
+The structural checker this repository ships, run over the twelve other wave 1 and 2 project repositories: every RFC and ADR has its required sections, no unfilled placeholders and valid links. Then its own templates and documents:
+
+![check_docs.py over 12 repositories: 0 problems](docs/proof/check-repos.jpg)
+
+Lint is clean, 15 checker tests pass, and the dev dependencies have no known vulnerabilities:
+
+![yamllint, ruff, pytest and pip-audit output](docs/proof/tests.jpg)
+
 ## Architecture
 
 **What M1 runs today:**
