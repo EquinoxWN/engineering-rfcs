@@ -3,7 +3,7 @@
 [![ci](https://github.com/EquinoxWN/engineering-rfcs/actions/workflows/ci.yml/badge.svg)](https://github.com/EquinoxWN/engineering-rfcs/actions/workflows/ci.yml)
 ![status](https://img.shields.io/badge/status-M1%20done%2C%20M2%20in%20progress-yellow)
 
-> The writing that gets you promoted, not just the code: RFCs, design reviews and postmortems for your own projects.
+> The design writing behind the code: RFC and ADR templates, a review process, an index of every project's design documents, and a checker that fails CI on missing sections or leftover placeholders.
 
 Part of my **CS Foundations** list · Markdown
 
@@ -35,7 +35,7 @@ flowchart LR
 
 ## How it works
 
-_Steps 1 and 2 are built and tested (M1); the rest is on the [roadmap](#roadmap)._
+_Steps 1, 2, 5 and 6 are built and tested; the rest is on the [roadmap](#roadmap)._
 
 1. Every flagship repo gets an RFC written before building: problem, goals, non-goals, options and the chosen design.
 2. Decisions made during the build are captured as short ADRs with their consequences.
@@ -46,11 +46,12 @@ _Steps 1 and 2 are built and tested (M1); the rest is on the [roadmap](#roadmap)
 
 ## Tech stack
 
-| Area | Tools |
-|---|---|
-| Docs | Markdown with Mermaid diagrams |
-| Templates | RFC, ADR, postmortem, design-review checklist |
-| Record | GitHub Discussions and PR review threads |
+| Area | In M1 | Planned |
+|---|---|---|
+| Docs | Markdown with Mermaid diagrams | - |
+| Templates | RFC, ADR, reviewer checklist in process.md | Postmortem template |
+| Checks | Python checker (`tools/check_docs.py`), yamllint, ruff, GitHub Actions | - |
+| Record | - | GitHub Discussions and PR review threads |
 
 Language: **Markdown**, plus a small Python checker.
 
@@ -126,8 +127,8 @@ mindmap
 - [ ] Chaos drills and fuzzing finds become blameless postmortems.
 
 **M3** (≈9 h)
-- [ ] Templates and a review checklist show how you would raise the bar for a team.
-- [ ] An index links every document to the code it shaped.
+- [x] Templates and a review checklist show how you would raise the bar for a team.
+- [x] An index links every document to the code it shaped.
 - [ ] Publish the proof below with real numbers
 
 ## Proof
@@ -143,7 +144,7 @@ What this repo must show before it counts as done:
 ## Why it matters
 
 - **Interview angle:** Staff behavioural rounds: 'tell me about a technical decision you drove and its trade-offs'.
-- **Upstream I'm contributing to:** A real RFC process: review comments on a Kubernetes KEP or a Rust RFC.
+- **Upstream I'd like to contribute to:** A real RFC process: review comments on a Kubernetes KEP or a Rust RFC.
 
 ## Design docs
 
