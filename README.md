@@ -44,6 +44,12 @@ _Steps 1, 2, 5 and 6 are built and tested; the rest is on the [roadmap](#roadmap
 5. Templates and a review checklist show how you would raise the bar for a team.
 6. An index links every document to the code it shaped.
 
+## Who it helps
+
+- **Who:** Engineers and teams who write design documents.
+- **The problem:** Design docs get skipped, or ship with empty sections and placeholders that no reviewer catches.
+- **How to use it:** Copy the RFC and ADR templates and the review checklist, and run the checker in CI so a document with missing sections or leftover placeholders fails the build.
+
 ## Tech stack
 
 | Area | In M1 | Planned |
