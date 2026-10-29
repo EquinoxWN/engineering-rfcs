@@ -1,4 +1,4 @@
-pytest>=8
-ruff>=0.6
-yamllint>=1.35
-pip-audit>=2.7
+pytest>=9.2
+ruff>=0.17
+yamllint>=1.38
+pip-audit>=2.10
